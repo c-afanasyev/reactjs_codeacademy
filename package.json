@@ -1,0 +1,21 @@
+{
+  "name": "reactjs_codeacademy",
+  "version": "1.0.0",
+  "description": "tutorial",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-c-afanasyev:c-afanasyev/reactjs_codeacademy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}

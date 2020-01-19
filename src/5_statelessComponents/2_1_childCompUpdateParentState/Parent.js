@@ -1,0 +1,27 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Child } from './Child';
+
+class Parent extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { name: 'Frarthur' };
+        this.changeName = this.changeName.bind(this);
+    }
+
+    render() {
+        return <Child name={this.state.name} onChange={this.changeName}/>
+    }
+
+    changeName(newName) {
+        this.setState({
+            name: newName
+        });
+    }
+}
+
+ReactDOM.render(
+    <Parent />,
+    document.getElementById('app')
+);
